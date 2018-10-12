@@ -4,9 +4,6 @@ import Link from 'next/link';
 const Sell = props => (
   <Fragment>
     <p> SELL </p>
-    <Link href="/">
-      <a>HOME</a>
-    </Link>
   </Fragment>
 );
 
