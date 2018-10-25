@@ -5,10 +5,11 @@ type Mutation {
 }
 
 
-type Query {
-  items(title: String!): [Item]!
-}
-
+# Where
 # type Query {
-#   items: [Item]!
+#   items(title: String!): [Item]!
 # }
+
+type Query {
+  items: [Item]!
+}
