@@ -4,5 +4,18 @@
     "titleBar.inactiveForeground": "#000000CC",
     "titleBar.activeBackground": "#FFC600",
     "titleBar.inactiveBackground": "#FFC600CC"
+  },
+  "files.exclude": {
+    "__error": "Not found",
+    "node_modules": true,
+    "package-lock.json": true,
+    "README.md": true,
+    ".vscode": true,
+    ".next": true,
+    "components/Meta.js": true,
+    "static": true,
+    "pages/_document.js": true,
+    "jest.setup.js": true,
+    "lib": true
   }
 }

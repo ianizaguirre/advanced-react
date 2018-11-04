@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from 'react';
-import Link from 'next/link';
+import CreateItem from '../components/CreateItem';
+// import Link from 'next/link';
 
 const Sell = props => (
   <Fragment>
-    <p> SELL </p>
+    <CreateItem />
   </Fragment>
 );
 
