@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Mutation } from 'react-apollo';
 import gql from 'graphql-tag';
+import Router from 'next/router';
 
 import ErrorMessages from './ErrorMessage';
 
@@ -40,9 +41,16 @@ class CreateItem extends Component {
   };
 
   handleSubmit = async (newCreatedItem, event) => {
+    // Stop the form from submitting
     event.preventDefault();
+    // call the mutation
     const response = await newCreatedItem();
-    console.log(response);
+    // // console.log(response);
+    // re-direct user to the single item page after the item is created
+    Router.push({
+      pathname: '/item',
+      query: { id: response.data.createItem.id }
+    });
   };
 
   render() {
