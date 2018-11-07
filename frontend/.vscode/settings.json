@@ -14,8 +14,8 @@
     ".next": true,
     "components/Meta.js": true,
     "static": true,
-    "pages/_document.js": true,
     "jest.setup.js": true,
-    "lib": true
+    "lib": true,
+    "pages/_document.js": true
   }
 }
